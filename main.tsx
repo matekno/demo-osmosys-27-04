@@ -8,6 +8,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    padding: 20,
   }
 })
 
@@ -17,9 +18,17 @@ const Main = () => {
     <View style={styles.container}>
      <Card
   backgroundColor="primary_orange"
-  data={
-    { title: "PROVEEDOR", description: "CWO" }
-  }
+  data={[
+    { title: "PROVEEDOR", description: "CWO" },
+    {
+      title: {
+        includeIcon: true,
+      },
+      description: {
+        text: "ando"
+      }
+    }
+  ]}
 />
     </View>);
 }
