@@ -15,13 +15,12 @@ const styles = StyleSheet.create({
 const Main = () => {
   return (
     <View style={styles.container}>
-      <Card>
-        backgroundColor= "primary_orange"
-        data={
-          "Probando",
-          "ando"
-        }
-      </Card>
+     <Card
+  backgroundColor="primary_orange"
+  data={
+    { title: "PROVEEDOR", description: "CWO" }
+  }
+/>
     </View>);
 }
 
